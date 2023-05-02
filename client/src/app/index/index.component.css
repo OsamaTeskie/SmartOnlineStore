@@ -1,0 +1,83 @@
+.container-fluid {
+    padding: 50px 0;
+  }
+  
+  body {
+    background-color: #F1ECE2;
+  }
+  
+  .display-1 {
+    font-size: 5.5rem;
+    font-weight: bold;
+    margin-bottom: 50px;
+    color: #45a29e;
+  }
+  
+  .items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch; /* Stretch items to fill container vertically */
+    margin: 0 auto;
+    max-width: 1000px;
+  }
+  
+  .item {
+    display: flex;
+    flex-direction: column;
+    
+    border: 1px solid #ccc;
+    padding: 1rem;
+    width: 25%;
+    height: 400px; /* Set a fixed height for the item container */
+    margin: 2%;
+    background-color: lightgoldenrodyellow;
+  }
+  
+  .item h2 {
+    color: black;
+  }
+  
+  .item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .item a {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .item img {
+    width: 100%;
+    height: 100%; /* Set image height to 100% of the item container */
+    object-fit: cover; /* Scale image to cover entire container */
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .itemTitle {
+    margin: 20px 0 10px 0;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+  }
+  
+  .itemPrice {
+    margin: 10px 0;
+    text-align: center;
+    font-size: 1.2rem;
+    color: green;
+    font-weight: bold;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .item {
+      width: 200px;
+      height: 300px;
+    }
+    .itemTitle {
+      font-size: 1.2rem;
+    }
+  }
+  

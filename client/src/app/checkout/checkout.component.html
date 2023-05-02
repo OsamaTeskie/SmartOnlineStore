@@ -1,0 +1,90 @@
+<body>
+<div class="container" *ngIf="token.length > 0">
+    <div class="row">
+        <ul class="items-container col-9">
+            <div class="row">
+                <div class="label col-sm">
+                    Items
+                </div>
+                <div class="label col-sm">
+                    Name
+                </div>
+                <div class="label col-sm">
+                    Prices
+                </div>
+            </div>
+            <li *ngFor="let item of itemsDetail">
+                <div class="row list" id="{{item.id}}">
+                    <div class="col-sm">
+                        <img src="../../assets/image/{{item.image_path}}">
+                    </div>
+                    <div class="col-sm">
+                        {{item.name}}
+                    </div>
+                    <div class="col-sm">
+                        ${{item.price | number:'1.0-2'}}
+                    </div>
+                </div>
+            </li>
+            <div class="row price">
+                <div class="col-8">
+                    <h3>Subtotal: </h3>
+                </div>
+                <div class="col-4">
+                    <p>${{myData | number:'1.0-2'}}</p>
+                </div>
+            </div>
+            <div class="row price">
+                <div class="col-8">
+                    <h3>Tax: </h3>
+                </div>
+                <div class="col-4">
+                    <p>${{tax | number:'1.0-2' }}</p>
+                </div>
+            </div>
+            <div class="row price">
+                <div class="col-8">
+                    <h3>Total: </h3>
+                </div>
+                <div class="col-4">
+                    <p>${{total | number:'1.0-2' }}</p>
+                </div>
+            </div>
+        </ul>
+
+        <div class="col-3">
+            <div class="row">
+                <form class="checkout" action="/checkout" (ngSubmit)="onSubmit()" #addressForm="ngForm">
+                    <label ng-required="true" for="num">Credit Card Number:</label>
+                    <input type="text" id="num" [(ngModel)]="data.card" name="num" required><br>
+            
+                    <label for="sec">Security Detail:</label>
+                    <input type="password" id="sec" name="sec" required><br>
+            
+                    <label for="name">Name on Card:</label>
+                    <input type="text" id="name" name="name" required><br>
+            
+                    <label for="loc">Delivery Location:</label>
+                    <input type="text" id="loc" [(ngModel)]="data.name" name="loc" required><br>
+
+                    <label for="service">Express Delivery ($2):</label>
+                    <input type="checkbox" value="1" [(ngModel)]="service" name="express"  [checked]="true" (change)="onItemChange($event)"/>
+                    <br>
+                    <input class="submit" type="submit" value="Submit">
+                </form>
+            </div>
+            <div class="row map">
+                <app-map></app-map>
+            </div>
+            
+        </div>
+    </div>
+</div>
+<div *ngIf="token.length < 0">
+    Access Denied
+</div>
+</body>
+
+
+
+

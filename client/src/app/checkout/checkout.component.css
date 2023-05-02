@@ -1,0 +1,63 @@
+li {
+    list-style-type:none
+}
+img {
+    height: 100px;
+}
+
+
+.list {
+    margin:1em;
+    border-radius: 25%;
+}
+
+body {
+    background-color: #F1ECE2;
+}
+
+li {
+    background-color:lightgoldenrodyellow;
+}
+.container {
+    vertical-align:middle;
+}
+.label {
+    height:3em;
+    border-bottom: 1px solid;
+}
+.price {
+    vertical-align:middle;
+    border-top: 1px solid;
+    margin: auto;
+}
+
+.checkout {
+    margin-top:3em;
+    padding-left:50px;
+    padding-bottom:50px;
+}
+
+.checkout input{
+    background-color:rgb(217, 226, 233);
+    border: none;
+    border-radius: 15px 10px 10px 15px;
+}
+.submit {
+    margin-top: 5px;
+    color:#514f55;
+    width: 77%;
+    vertical-align: middle;
+}
+
+.map {
+    max-height: 500px;
+    overflow:hidden;
+    border-radius: 20%;
+    border-width: 10px;
+    border-color: rgb(50, 105, 153);
+}
+
+
+div {
+    color: black
+}

@@ -1,0 +1,16 @@
+<body>
+<div class="form-container">
+  <h1 class="form-heading">Login</h1>
+  <form [formGroup]="angForm" (ngSubmit)="postdata(angForm)">
+    <div class="form-element">
+      <label>User Id/Email Address</label>
+      <input type="text" name="name" formControlName="name" class="form-control  formInput" required>
+    </div>
+    <div class="form-element">
+      <label>Password</label>
+      <input type="password" name="password" formControlName="password" class="form-control formInput" required>
+    </div>
+    <button type="submit" class="btn btn-primary button">Login</button>
+  </form>
+</div>
+</body>
