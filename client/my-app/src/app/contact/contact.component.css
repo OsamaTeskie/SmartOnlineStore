@@ -1,0 +1,138 @@
+
+body {
+    background-color: #F1ECE2;
+    color: #fff;
+    font-family: sans-serif;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    border-radius: 10px;
+    background-color: #Fff;
+    box-shadow: 0px 0px 20px rgba(255,255,255,0.1);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #45a29e;
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.element {
+    margin:10px;
+}
+
+h2 {
+    font-size: 36px;
+    font-weight: bold;
+    text-shadow: 2px 2px #45a29e;
+    grid-column: 1 / -1;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+div {
+    padding: 20px;
+    background-color: #45a29e;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(255,255,255,0.1);
+}
+
+h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px #1f2833;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    justify-content: space-between;
+}
+
+li {
+    flex: 1;
+    margin-right: 10px;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    display: block;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+a:hover {
+    background-color: #1f2833;
+    border: 2px solid #45a29e;
+    box-shadow: 0px 0px 10px rgba(255,255,255,0.1);
+    transition: background-color 0.3s ease;
+}
+
+.feedback {
+    margin:10px;
+}
+
+.formInput {
+    margin-left:1px;
+    border-radius:20px;
+    background-color:#6ab3b3;
+    transition: background-color 0.5s;
+    border: 0;
+    outline: 0;
+    width: 100%;
+    margin-bottom:10px;
+}
+
+input:focus, textarea:focus {
+    outline: none !important;
+    background-color:rgb(255, 251, 245)
+}
+
+.button {
+    color:#fff;
+    background-color:#6ab3b3;
+    margin-left:1px;
+    border-radius:100px;
+    min-height:75px;
+    border: 0;
+    transition: background-color 0.5s;
+    text-align:center;
+    vertical-align: middle;
+    font: 2em sans-serif;
+}
+
+.button:hover {
+    background-color:#f5ffff;
+    color:#45a29e;
+    font-weight:bolder;
+}
+
+
+@media (max-width: 768px) {
+    main {
+        grid-template-columns: 1fr;
+    }
+    
+    div {
+        margin-bottom: 40px;
+    }
+}

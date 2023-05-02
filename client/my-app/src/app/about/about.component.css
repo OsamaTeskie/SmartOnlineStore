@@ -1,0 +1,41 @@
+.container {
+    background-color: #FFF;
+    padding-bottom:20px;
+}
+.detail {
+    margin-left:10px;
+    margin-right:10px;
+    margin-bottom:2em;
+    height: 250px;
+    background-color:#45a29e;
+    border-radius: 20px 20px 20px 20px;
+    text-align:center;
+}
+
+.detail .names {
+    margin-top:100px;
+    font-size: xxx-large;
+    color:aliceblue;
+    font-weight: bolder;
+}
+
+.detail img{
+    margin-top:30px;
+    margin-left: 20px;
+    height:200px;
+    width:200px;
+    border-radius: 50%;
+}
+.AboutUs {
+    padding: 1%;
+    font-size: 75px;
+    margin-bottom: 0.25em;
+}
+
+body {
+    background-color: #F1ECE2;
+}
+
+h1 {
+    color: #45a29e;
+}

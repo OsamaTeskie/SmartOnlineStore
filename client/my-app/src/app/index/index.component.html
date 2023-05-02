@@ -1,0 +1,14 @@
+
+<body>
+<div class="container-fluid text-center">
+    <h1 class="display-1">Smart Customer Services</h1>
+    <div class="items div1">
+            <div *ngFor="let item of myData" class="item" id="{{item.id}}">
+                <a><img draggable="false" width="250" height="250" src="../../assets/image/{{item.img}}" alt="{{item.name}}"/></a>
+                <h2 class='itemTitle'>{{item.name}}</h2>
+                <span class='itemPrice'>${{item.price}}</span>
+            </div>
+        </div>
+  </div>
+<app-footer></app-footer>
+<body>

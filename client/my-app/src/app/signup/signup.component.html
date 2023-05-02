@@ -1,0 +1,24 @@
+<body>
+<div class="form-container">
+  <h1 class="form-heading">Sign Up</h1>
+  <form [formGroup]="angForm" (ngSubmit)="postdata(angForm)">
+    <div class="form-element">
+      <label>User Id</label>
+      <input type="text" name="login_id" formControlName="login_id" class="form-control  formInput" required>
+    </div>
+    <div class="form-element">
+      <label>Email Address</label>
+      <input type="text" name="email" formControlName="email" class="form-control  formInput" required>
+    </div>
+    <div class="form-element">
+      <label>Password</label>
+      <input type="password" name="password" formControlName="password" class="form-control formInput" required>
+    </div>
+    <div class="form-element ">
+      <input class="form-check-input" type="checkbox" name="admin" formControlName="admin" value="1">
+      <label for="admin">Admin Account</label>
+    </div>
+    <button class="btn btn-primary button">Sign Up</button>
+  </form>
+</div>
+</body>
