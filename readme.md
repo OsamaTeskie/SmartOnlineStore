@@ -7,7 +7,9 @@ Follow these steps to successfully run this project on your local computer
 ### Server
 
 <ol>
-<li>To run this project's server, move all php files from insider the ../Iteration1-2-3-4/server folder to htdocs/630/ folder</li>
+<li>Download Xampp, and Angular</li>
+<li>Inside htdocs in ../xampp, create a folder called 630</li>
+<li>Move all php files from inside the server folder to htdocs/630/ folder</li>
 <li>Then, run create_tables.php to create all tables required for this project</li>
 </ol>
 
