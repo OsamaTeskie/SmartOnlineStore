@@ -1,0 +1,14 @@
+secret is the cart and checkout page
+-   client: redirect all other pages to login if no token in local storage
+-   client: on login page loaded, send request for a public key
+-   server: on receiving client request for a public key, generate a private key
+
+-   client: on login, use public key to encrypt username and password
+-   server: on receive encrypted username and password, use private key to decrypt
+-   server: on successfully decryption with key, generate a hash as token, response to client
+    - server: on failure to decrypt, generate a json response
+
+-   client: upon receiving the token, store it in localstorage
+-   client: cart page/checkout page render with a token in localstorage
+-   client: upon check out or drag to cart, send token to server
+-   server: in each page, upon receiving token, verify token, and perform regular duties
